@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* comon css starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+.cmmnbtn{
+    padding: 13px 24px;
+    background-color: rgba(89, 86, 235, 0.5);
+    color: #292929;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+.cmmnbtn:hover{
+    background-color: #5956eb;
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+/* comon css ends */
+
+/* nav css starts */
+.menu{
+    padding: 34px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    gap: 60px;
+}
+.menu ul li{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.menu ul li a{
+    color: #292929;
+    position: relative;
+    transition: all linear .3s;
+}
+.menu ul li a:hover{
+    color: blue;
+}
+.menu ul li a::after{
+    content: "";
+    height: 1.5px;
+    width: 0;
+    background-color: #292929;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+}
+.menu ul li a:hover::after{
+    width: 130%;
+    background-color: blue;
+}
+
+/* nav css ends */
+
+/* banner css starts */
+.banner{
+    background-color: #5956eb;
+    width: 100%;
+
+}
+.banner-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.txt-part{
+    padding: 237px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.txt-part h1{
+    width: 501px;
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.txt-part p{
+    width: 590px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+}
+.bannerbtn{
+    padding: 13px 24px;
+    background-color: rgba(253, 253, 253, 0.5);
+    color: #292929;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+.bannerbtn:hover{
+    background-color: white;
+    color: #5956eb;
+}
+
+/* banner css ends */
+
+/* design css starts */
+#design{
+    margin-top: 170px;
+}
+.design h2{
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card-sec{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    /* padding: 83px 48px; */
+    padding: 36px;
+    width: 422px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 24px;
+    transition: all ease .3s;
+}
+.card:hover{
+    background-color: #5956eb;
+    border: 1px solid transparent;
+    transform: translateY(-15px);
+}
+.icon{
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card:hover .icon{
+    border: 1px solid white;
+}
+.icon i{
+    font-size: 30px;
+}
+.card:hover i{
+    color: white;
+}
+.card h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.card:hover h3{
+    color: white;
+}
+.card p{
+    width: 274px;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.card:hover p{
+    color: white;
+}
+
+/* design css ends */
+
+/* portfolio css starts */
+#portfolio{
+    margin: 90px 0;
+}
+.portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio h2{
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+.portfolio p{
+    margin: 20px 0 50px 0;
+    width: 562px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.img-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.img{
+    position: relative;
+}
+.img::before{
+    content: "graphic design see all ->";
+    position: absolute;
+    bottom: 7%;
+    /* right: 50%;
+    left: -46%;
+    transform: translateX(120%); */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px;
+    width: 0;
+    height: 113px;
+    background-color: rgba(89, 86, 235, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    cursor: pointer;
+    visibility: hidden;
+    transition: all ease .3s;
+}
+.img:hover::before{
+    width: 230px;
+    /* right: 50%;
+    transform: translateX(50%); */
+    visibility: visible;
+}
+.img img{
+    width: 270px;
+    height: 420px;
+    object-fit: cover;
+    border: none;
+    border-radius: 16px;
+}
+/* portfolio css ends */
+
+/* team profile css starts */
+#team{
+    margin: 50px 0;
+}
+.team-prof{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.team-prof h2{
+    margin: 20px 0;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+.team-prof p{
+    width: 562px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.prof-card{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.profile{
+    background-color: rgba(128, 128, 128, 0.08);
+    border-radius: 12px;
+    position: relative;
+}
+.profile img{
+    width: 370px;
+    height: 444px;
+    object-fit: cover;
+    border-radius: 12px;
+    visibility: hidden;
+    transition: all ease 1s;
+}
+.profile:hover img{
+    visibility: visible;
+    transform: rotateY(180deg);
+}
+.pdtls{
+    background: linear-gradient(to bottom, white, #5956eb);
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pdtls p:nth-child(1){
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+.pdtls p:nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+/* team profile css ends */
