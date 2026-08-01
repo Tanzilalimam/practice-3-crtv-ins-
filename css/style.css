@@ -33,7 +33,7 @@ p{
 }
 .container{
     margin: 0 auto;
-    max-width: 1320px;
+    max-width: 1170px;
 }
 
 /* comon css ends */
@@ -150,7 +150,7 @@ p{
 .card{
     /* padding: 83px 48px; */
     padding: 36px;
-    width: 422px;
+    width: 370px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -305,26 +305,34 @@ p{
     gap: 20px;
 }
 .profile{
+    width: 370px;
+    height: 444px;
     background-color: rgba(128, 128, 128, 0.08);
     border-radius: 12px;
     position: relative;
 }
 .profile img{
-    width: 370px;
-    height: 444px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    visibility: hidden;
-    transition: all ease 1s;
 }
-.profile:hover img{
-    visibility: visible;
-    transform: rotateY(180deg);
+.overlay{
+    padding: 48px;
+    width: 100%;
+    background-color: blue;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0px -80px 100px blue;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .pdtls{
-    background: linear-gradient(to bottom, white, #5956eb);
+    padding: 24px;
     position: absolute;
-    bottom: 7%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -340,3 +348,239 @@ p{
 }
 
 /* team profile css ends */
+
+/* customer care css starts */
+#customercare-sec{
+    margin: 142px 0;
+}
+.customercare{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.customercare h2{
+    width: 603px;
+    color: #181818;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.customercare p{
+    width: 580px;
+    color: rgba(24, 24, 24, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.review-cards{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.review{
+    padding: 48px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.rimg{
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rstar{
+    width: 128px;
+}
+.customercare .rpara{
+    width: 274px;
+    color: rgba(24, 24, 24, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.customercare .designation p:nth-child(1){
+    width: 140px;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.customercare .designation p:nth-child(2){
+    margin-top: 5px;
+    width: 100px;
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+/* customer care css ends */
+
+/* news css starts */
+#news-sec{
+    margin: 142px 0;
+}
+.news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.news h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.news p{
+    width: 542px;
+    color: rgba(24, 24, 24, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+.news-cards{
+    display: flex;
+    gap: 50px;
+}
+.news-card{
+    padding: 19px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+}
+.news .news-card img{
+    width: 332px;
+    height: 200px;
+    object-fit: cover;
+}
+.admin{
+    color: #5d5d5d;
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.admin i{
+    font-size: 18px;
+    font-weight: 300;
+}
+.news-card h3{
+    width: 271px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.news .news-card p{
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+.newsbtn{
+    align-self: start;
+    background-color: transparent;
+    color: #5d5d5d;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all linear .4s;
+}
+.newsbtn:hover{
+    color: blue;
+}
+
+/* news css ends */
+
+/* footer css starts */
+#foot-sec{
+    margin-top: 100px;
+    padding: 100px 0;
+    background-color: rgba(89, 86, 235, 0.1);
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.prt1 p{
+    width: 300px;
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.social{
+    display: flex;
+    gap: 15px;
+}
+.link{
+    margin-top: 30px;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    color: #5d5d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.link i{
+    font-size: 28px;
+    transition: all .3s linear;
+}
+.link:hover i{
+    color: #337fff;
+}
+.prt2{
+    display: flex;
+    gap: 90px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.one h4{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.one ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.one ul li{
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.one ul li a{
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all linear .4s;
+}
+.one ul li a:hover{
+    color: blue;
+}
+
+/* footer css ends */
